@@ -1,0 +1,527 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/16/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 29 11:33:41 EET 2023</td>
+</tr>
+<tr><td>Total time:</td><td>49 seconds (49628 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could not login with invalid email and password", "F02_LoginValid | users could use login functionality to use their accounts"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1917784974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1917784974'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could hover in main categories and select sub-categories", "F06_HoverCategories | user can select different Categories in the website"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace932885627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace932885627'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could select products in euro", "F04_Currencies Check | Logged user can select Euro currency from dropdown list in home page and Euro symbol (€) is shown"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace14124949", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace14124949'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search for products by sku", "F05_Search | users could search for products by name or by sku"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1584918772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1584918772'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search for products by sku", "F05_Search | users could search for products by name or by sku"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace696739588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace696739588'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search for products by sku", "F05_Search | users could search for products by name or by sku"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace373437697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace373437697'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search for products by name", "F05_Search | users could search for products by name or by sku"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace637091966", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace637091966'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could login with valid email and password", "F02_LoginValid | users could use login functionality to use their accounts"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace290096578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace290096578'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search for products by name", "F05_Search | users could search for products by name or by sku"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace791408866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace791408866'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "First slider is clickable on home page", "F07_HomeSliders | users can select between options in home slider"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace748006558", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace748006558'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User could reset his/her password successfully", "F03_ResetPassword | User could reset his/her password successfully"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace211031000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace211031000'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Second slider is clickable on home page", "F07_HomeSliders | users can select between options in home slider"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2093319848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2093319848'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "guest user could register with valid data successfully", "F01_Register | users could register with new accounts"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace424732838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424732838'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user add products to shopping cart", "F09_ShoppingCart | User could add different products to Shopping cart"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2052489518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2052489518'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user could search for products by name", "F05_Search | users could search for products by name or by sku"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1504321715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1504321715'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+<tr>
+<td title='org.example.testRunner.runners.runScenario()'><b>runScenario</b><br>Test class: org.example.testRunner.runners<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user add htc phone product to Wishlist", "F10_WishList | user could add  products to Wishlist"</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace793269462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793269462'><pre>java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+</pre></div></td>
+<td>3</td>
+<td>org.example.testRunner.runners@5db250b4</td></tr>
+</table><p>
+</body>
+</html>

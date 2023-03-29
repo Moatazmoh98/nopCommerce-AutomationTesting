@@ -1,0 +1,9 @@
+file:src/test/java/features/F07_HomeSliders.feature:8:14
+file:src/test/java/features/F04_Currency.feature:5
+file:src/test/java/features/F01_Register.feature:4
+file:src/test/java/features/F09_ShoppingCart.feature:5
+file:src/test/java/features/F03_Reset[assword.feature:6
+file:src/test/java/features/F02_Login.feature:6:16
+file:src/test/java/features/F05_Search.feature:11:12:13:24:25:26
+file:src/test/java/features/F10_WishList.feature:5
+file:src/test/java/features/F06_HoverCategories.feature:5

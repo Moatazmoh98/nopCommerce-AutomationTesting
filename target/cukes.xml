@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="16" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="16" time="48.907">
+    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="3.063">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user go to register page..............................................skipped
+When user select gender type................................................skipped
+And user enters first name "automation".....................................skipped
+And user enters last name "tester"..........................................skipped
+And user enters date of birth...............................................skipped
+And user enters email "adhamagdyoussef@gmail.com"...........................skipped
+And user enters password "P@ssw0rd".........................................skipped
+And user confirms password "P@ssw0rd".......................................skipped
+And user clicks on register button..........................................skipped
+Then success message is displayed...........................................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F02_LoginValid | users could use login functionality to use their accounts" name="user could login with valid email and password" time="3.017">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user go to login page.................................................skipped
+When user login with valid email "adhamagdyoussef@gmail.com"................skipped
+And user login with valid password "P@ssw0rd"...............................skipped
+And user clicks on login button.............................................skipped
+Then user login to the system successfully and return to home page..........skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F02_LoginValid | users could use login functionality to use their accounts" name="user could not login with invalid email and password" time="3.021">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user go to login page.................................................skipped
+When user login with invalid email "adhamagdy@gmail.com"....................skipped
+And user login with invalid password "P@ssw0rdWrong"........................skipped
+And user clicks on login button.............................................skipped
+Then user could not login to the system.....................................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F03_ResetPassword | User could reset his/her password successfully" name="User could reset his/her password successfully" time="3.019">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user go to logging page...............................................skipped
+When user clicks on forget password.........................................skipped
+And user enter valid email "adhamagdyoussef@gmail.com"......................skipped
+And user click reset button.................................................skipped
+Then "Email with instructions has been sent to you." message is displayed...skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F04_Currencies Check | Logged user can select Euro currency from dropdown list in home page and Euro symbol (€) is shown" name="user could select products in euro" time="3.033">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given User log in with email "adhamagdyoussef@gmailcom" and password "P@ssw0rd".skipped
+When user select Euro currency from currency dropdown list..................skipped
+Then products price is shown in Euro........................................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F05_Search | users could search for products by name or by sku" name="user could search for products by name" time="3.022">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user enters product name "book" in the test search field at home page.skipped
+When user clicks on search button...........................................skipped
+Then search results appears with products related to the search name "book" in the search text field.skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F05_Search | users could search for products by name or by sku" name="user could search for products by name 2" time="3.004">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user enters product name "laptop" in the test search field at home page.skipped
+When user clicks on search button...........................................skipped
+Then search results appears with products related to the search name "laptop" in the search text field.skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F05_Search | users could search for products by name or by sku" name="user could search for products by name 3" time="3.019">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user enters product name "nike" in the test search field at home page.skipped
+When user clicks on search button...........................................skipped
+Then search results appears with products related to the search name "nike" in the search text field.skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F05_Search | users could search for products by name or by sku" name="user could search for products by sku" time="3.012">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user enters product sku "SCI_FAITH" in the test search field at home page.skipped
+When user clicks on search button...........................................skipped
+And user click on product detail page.......................................skipped
+Then search results appears with products related to the search sku "SCI_FAITH" in the search text field.skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F05_Search | users could search for products by name or by sku" name="user could search for products by sku 2" time="3.019">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user enters product sku "APPLE_CAM" in the test search field at home page.skipped
+When user clicks on search button...........................................skipped
+And user click on product detail page.......................................skipped
+Then search results appears with products related to the search sku "APPLE_CAM" in the search text field.skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F05_Search | users could search for products by name or by sku" name="user could search for products by sku 3" time="3.022">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user enters product sku "SF_PRO_11" in the test search field at home page.skipped
+When user clicks on search button...........................................skipped
+And user click on product detail page.......................................skipped
+Then search results appears with products related to the search sku "SF_PRO_11" in the search text field.skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F06_HoverCategories | user can select different Categories in the website" name="user could hover in main categories and select sub-categories" time="3.025">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user hover to a category and click on one of its sub-categories.......skipped
+Then user will navigate to a page contains products about that sub-category.skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F07_HomeSliders | users can select between options in home slider" name="First slider is clickable on home page" time="3.005">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user at homepage......................................................skipped
+When user click on first slider with nokia image............................skipped
+Then user navigate to nokia product details page............................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F07_HomeSliders | users can select between options in home slider" name="Second slider is clickable on home page" time="3.021">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given user at homepage......................................................skipped
+When user click on second slider with iphone image..........................skipped
+Then user navigate to iphone product details page...........................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F09_ShoppingCart | User could add different products to Shopping cart" name="user add products to shopping cart" time="3.026">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[Given User navigate to Books category page..................................skipped
+When User click on Add To Cart button for a book............................skipped
+And success message appears which confirm adding the product to shopping cart.skipped
+And User navigate to Shopping Cart page.....................................skipped
+Then Shopping cart will contain all selected products.......................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+    <testcase classname="F10_WishList | user could add  products to Wishlist" name="user add htc phone product to Wishlist" time="3.023">
+        <failure message="The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe" type="java.lang.IllegalStateException"><![CDATA[When user click on add to wishlist button of product at home page...........skipped
+And success message appears which confirm adding the product................skipped
+And user click on Wishlist link.............................................skipped
+Then user will navigate to wishlist page which contain the product not equal zero.skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\user\Downloads\nopcommerce automation testing\nopCommerce-AutomationTesting-main\nopCommerce-AutomationTesting-main\Drivers\geckodriver.exe
+	at org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:345)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:160)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:155)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:45)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:181)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
+	at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:94)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at org.example.stepDefinitions.Hooks.openBrowser(Hooks.java:21)
+]]></failure>
+    </testcase>
+</testsuite>
